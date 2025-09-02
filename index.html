@@ -198,7 +198,21 @@
 
 'd1q_post-questions': [
     { type: 'mcq', question: 'What happens to an F1 score if the precision or recall metric is low?', options: ['The F1 score will be low', 'The F1 score will be equal to the higher metric', 'The F1 score cannot be calculated if the precision or recall metric is low', 'The F1 score will be high'], answer: 'The F1 score will be low' },
-    { type: 'multi-select', question: 'Which two statements about AI inputs and outputs are true?', options: ['Outputs can be a numeric value or a classification', 'Features are the expected values for an AI model to predict', 'Outputs should be determined before inputs', 'Features cannot include text', 'Features are often numerical'], answer: ['Outputs can be a numeric value or a classification', 'Outputs should be determined before inputs'] },
+{
+  "type": "multi-select",
+  "question": "Which two statements about AI inputs and outputs are true?",
+  "options": [
+    "Outputs can be a numeric value or a classification",
+    "Features are the expected values for an AI model to predict",
+    "Outputs should be determined before inputs",
+    "Features cannot include text",
+    "Features are often numerical"
+  ],
+  "answer": [
+    "Outputs can be a numeric value or a classification",
+    "Outputs should be determined before inputs"
+  ]
+},    
 {
     type: 'drag_drop',
     question: 'Match the data type to its description.',
@@ -279,9 +293,9 @@
         { id: 'Transform data to build an AI model', text: 'Transform data to build an AI model' },
         { id: 'Decide which algorithms are best for an AI solution', text: 'Decide which algorithms are best for an AI solution' }
     ],
-    answers: { 'Understand the requirements of the AI project': 'Position 1', 'Position_2': 'Transform data to build an AI model', 'Decide which algorithms are best for an AI solution': 'Position 3' }},
+    answers: { 'Understand the requirements of the AI project': 'Position 1', 'Transform data to build an AI model': 'Position 2', 'Decide which algorithms are best for an AI solution': 'Position 3' }},
     { type: 'mcq', question: 'How can one help ensure AI solutions are not used out of context?', options: ['Encourage people to use AI solutions in multiple different situations', 'Ensure AI solutions are intended for multiple different situations', 'Ensure AI solutions are reviewed by an AI expert before being implemented', 'Clearly communicate the scope and limitations of AI solutions'], answer: 'Clearly communicate the scope and limitations of AI solutions' },
-    { type: 'mcq', question: 'What is logistic regression?', options: ['A type of regression that uses ordinal variables as outcomes', 'A type of regression that uses binary, dependent variables as outcomes', 'A type of regression that uses independent variables as outcomes', 'A type of regression that uses continuous us variables as outcomes'], answer: 'A type of regression that uses binary, dependent variables as outcomes' },
+    { type: 'mcq', question: 'What is logistic regression?', options: ['A type of regression that uses ordinal variables as outcomes', 'A type of regression that uses binary, dependent variables as outcomes', 'A type of regression that uses independent variables as outcomes', 'A type of regression that uses continuous us variables as outcomes'], answer: 'A type of regression that uses ordinal variables as outcomes'},
 { 
     type: 'drag_drop', 
     question: 'Match the principle to its description.', 
@@ -310,7 +324,22 @@
 ],
             'd2q_post-questions': [
     { type: 'mcq', question: 'Why are feature vectors needed?', options: ['To ensure data integrity so an AI model can make accurate predictions', 'To ensure a data set is large enough to create an unbiased AI model', 'To ensure data is balanced so an AI model can make accurate predictions', 'To convert data into machine-readable format so that an A1 model can make informed predictions'], answer: 'To convert data into machine-readable format so that an A1 model can make informed predictions' },
-    { type: 'multi-select', question: 'What are some important positive aspects of assessing data quality? Choose three answers.', options: ['Does it contain personal information', 'Is it complete', 'Is it large enough to produce results without being too large', 'Is it balanced', 'Does it have corrupt elements'], answer: ['Is it complete', 'Is it large enough to produce results without being too large', 'Is it balanced'] },
+{
+  "type": "multi-select",
+  "question": "What are some important aspects of assessing data quality? Choose three answers.",
+  "options": [
+    "Does it contain personal information",
+    "Is it complete",
+    "Is it large enough to produce results without being too large",
+    "Is it balanced",
+    "Does it have corrupt elements"
+  ],
+  "answer": [
+    "Is it complete",
+    "Is it balanced",
+    "Is it large enough to produce results without being too large"
+  ]
+},
     { type: 'mcq', question: 'What is the most important question to answer when determining which features to use in AI machine learning?', options: ['Is this feature expensive to use?', 'Is this feature big enough?', 'Does this feature impact the outcome and help the model is performance?', 'Does this feature make the AI model look better?'], answer: 'Does this feature impact the outcome and help the model is performance?' },
     { type: 'mcq', question: 'What is the first consideration for data when working with an AI model?', options: ['Data quality', 'Data corruption', 'Data representation', 'Data type'], answer: 'Data quality' },
     { type: 'multi-select', question: 'Which statements regarding data set size are true? Choose three answers.', options: ['There is a set percentage of statistical data that one must adhere to when collecting data', 'The size of a data set is important', 'The size of a data set is not important', 'The amount of data collected must be sufficient to build an unbiased A1 model', 'If there is not enough data for a data set, one should consider increasing the number of sources used'], answer: ['The size of a data set is important', 'The amount of data collected must be sufficient to build an unbiased A1 model', 'If there is not enough data for a data set, one should consider increasing the number of sources used'] },
@@ -488,8 +517,8 @@
 ],
             'd4q_post-questions': [
     { type: 'multi-select', question: 'What are three metrics used to measure the acceptable speed for an application?', options: ['Response time', 'Processing time', 'Request volume', 'Fault tolerance', 'Predictions per second'], answer: ['Response time', 'Processing time', 'Predictions per second'] },
-    { type: 'mcq', question: 'Why should an AI application be tested under multiple connection circumstances?', options: ['Mobile device users will not always have a strong connection to the servers', 'To establish speed benchmarks', 'To assess the performance and scalability of the app', 'Mobile device users might use different operating systems'], answer: 'To assess the performance and scalability of the app' },
-    { type: 'multi-select', question: 'What are three options for collecting feedback on an AI model?', options: ['Focus groups', 'Reviewing social media channels', 'A dedicated support email address', 'User testing', 'A call center'], answer: ['A dedicated support email address', 'Focus groups', 'User testing'] },
+    { type: 'mcq', question: 'Why should an AI application be tested under multiple connection circumstances?', options: ['Mobile device users will not always have a strong connection to the servers', 'To establish speed benchmarks', 'To assess the performance and scalability of the app', 'Mobile device users might use different operating systems'], answer: 'Mobile device users will not always have a strong connection to the servers' },
+    { type: 'multi-select', question: 'What are three options for collecting feedback on an AI model?', options: ['Focus groups', 'Reviewing social media channels', 'A dedicated support email address', 'User testing', 'A call center'], answer: ['Reviewing social media channels', 'Focus groups', 'User testing'] },
     { type: 'multi-select', question: 'Which statements about A1 model documentation are true? Choose three.', options: ['Support documentation should only be internally facing', 'Every model function should have a clear purpose and intent and expected behavior', 'Comments within code make the code difficult to read and are not useful for documentation', 'Information about the API should be documented for programmers', 'Any versioning and data changes should be documented to improve quality'], answer: ['Every model function should have a clear purpose and intent and expected behavior', 'Information about the API should be documented for programmers', 'Any versioning and data changes should be documented to improve quality'] },
     { 
     type: 'drag_drop', 
@@ -503,7 +532,7 @@
     answers: { 
         'Assess existing data stores': 'Position 1', 
         'Determine how to retrieve and synchronize data': 'Position 2', 
-        'Test migrations and integrations': 'Position 4', 
+        'Test migrations and integrations': 'Position 3', 
         'Analyze and revise transformed data': 'Position 4' 
     } 
 },
@@ -520,7 +549,7 @@
     { type: 'multi-select', question: 'What are three necessary considerations for building data connections?', options: ['Error and exception handling', 'Amount of data to transform', 'Data privacy and security', 'Training methodology', 'Data transformation requirements'], answer: ['Error and exception handling', 'Data privacy and security', 'Data transformation requirements'] },
     { type: 'multi-select', question: 'Which three statements about testing AI accuracy are true?', options: ['Both positive and negative samples should be used to assess a model\'s accuracy', 'Test case scenarios should be evaluated based on desired results', 'False positives and false negatives should be analyzed for classification-based projects', 'User error does not need to be evaluated as a potential issue for AI models', 'Test cases should include expected data and situations the AI system will encounter'], answer: ['Both positive and negative samples should be used to assess a model\'s accuracy', 'False positives and false negatives should be analyzed for classification-based projects', 'Test cases should include expected data and situations the AI system will encounter'] },
     { type: 'mcq', question: 'What should be done with an AI model when bias is discovered?', options: ['Remove features', 'Change code used to run the model', 'Retrain the model', 'Change to a faster computing method'], answer: 'Retrain the model' },
-    { type: 'mcq', question: 'Why might one need to implement new ways to collect data for a model?', options: ['To make the AI model more accurate overall', 'To get better feedback for the AI model', 'To make the AI model more robust', 'To increase the speed of the AI model'], answer: 'To make the AI model more robust' },
+    { type: 'mcq', question: 'Why might one need to implement new ways to collect data for a model?', options: ['To make the AI model more accurate overall', 'To get better feedback for the AI model', 'To make the AI model more robust', 'To increase the speed of the AI model'], answer: 'To make the AI model more accurate overall' },
     { type: 'multi-select', question: 'Which items are appropriate documentation types for AI models? Choose three.', options: ['User data', 'FAQs', 'White papers', 'Training data', 'User guides'], answer: ['FAQs', 'White papers', 'User guides'] }
 ],
             'd5q_pre-questions': [
@@ -533,7 +562,7 @@
             'd5q_post-questions': [
     { type: 'mcq', question: 'What should be done if a miniature golf course adds a major new attraction that affects staffing needs?', options: ['Decommissioning the AI model and create a new one', 'Retrain the AI model to account for staffing needs', 'Create another AI model o account for the staffing needs', 'Continue using the AI model without change'], answer: 'Retrain the AI model to account for staffing needs' },
     { type: 'multi-select', question: 'What are three ways in which feedback can be used to help improve an AI product?', options: ['Implement a KPI such as Net Promoter Score (NPS) so users can rate an app', 'Conduct an A/B test to compare different responses and usage patterns to different app versions', 'Ensure that any implemented AI solution promotes fairness, transparency, privacy, and security', 'Monitor app usage to determine whether users are abandoning the app or staying in it', 'Use a drift detector to identify shifts in underlying data used in an app'], answer: ['Implement a KPI such as Net Promoter Score (NPS) so users can rate an app', 'Conduct an A/B test to compare different responses and usage patterns to different app versions', 'Monitor app usage to determine whether users are abandoning the app or staying in it'] },
-    { type: 'multi-select', question: 'Once an A1 solution is fully implemented, what are two considerations that need to be made regularly?', options: ['Test it or deploy it', 'Monitor it or decommission it', 'Improve it or decommission it', 'Improve it or test it'], answer: ['Monitor it or decommission it', 'Improve it or decommission it'] },
+    { type: 'mcq', question: 'Once an AI solution is fully implemented, what are two considerations that need to be made regularly?', options: ['Test it or deploy it', 'Monitor it or decommission it', 'Improve it or decommission it', 'Improve it or test it'], answer:'Improve it or decommission it' },
     { type: 'mcq', question: 'What are key performance indicators (KPIs) for AI models?', options: ['Any unexpected metrics', 'Numeric values that determine how well a model is performing', 'Metrics that define levels of success or failure', 'Data types and characteristics'], answer: 'Numeric values that determine how well a model is performing' },
     { type: 'mcq', question: 'What is a bias mitigation technique for addressing disparities in AI outcomes?', options: ['Analyze the data to find patterns that might lead to biased outcomes', 'Observe the system over time in a variety of contexts', 'Compare previous metrics with new metrics', 'Increasing or diversifying data being used from groups with perceived bias'], answer: 'Increasing or diversifying data being used from groups with perceived bias' },
     { type: 'mcq', question: 'Which feedback assessment tracks the movement of a user\'s cursor across the screen?', options: ['Direct feedback', 'Real-time interaction', 'Chatbot conversation', 'Mouse tracking'], answer: 'Mouse tracking' },
@@ -739,79 +768,98 @@
             });
         }
 
-        function checkAnswers() {
-            if (!currentQuizType) return;
-            const quizQuestions = questions[currentQuizType];
-            let score = 0;
-            const contentArea = document.getElementById('content-area');
+       function checkAnswers() {
+    if (!currentQuizType) return;
+    const quizQuestions = questions[currentQuizType];
+    let score = 0;
+    const contentArea = document.getElementById('content-area');
 
-            quizQuestions.forEach((q, index) => {
-                let isCorrect = false;
-                let questionCard = contentArea.querySelectorAll('.quiz-card')[index];
-                
-                questionCard.classList.remove('correct-answer', 'incorrect-answer');
+    quizQuestions.forEach((q, index) => {
+        let isCorrect = false;
+        let questionCard = contentArea.querySelectorAll('.quiz-card')[index];
+        questionCard.classList.remove('correct-answer', 'incorrect-answer');
 
-                if (q.type === 'mcq') {
-                    const selectedOption = contentArea.querySelector(`input[name="q${index}"]:checked`);
-                    if (selectedOption && selectedOption.value === q.answer) {
-                        isCorrect = true;
+        if (q.type === 'mcq') {
+            const selectedOption = contentArea.querySelector(`input[name="q${index}"]:checked`);
+            if (selectedOption && selectedOption.value === q.answer) {
+                score += 1;
+                isCorrect = true;
+            }
+        } else if (q.type === 'multi-select') {
+            const selectedOptions = Array.from(contentArea.querySelectorAll(`input[type="checkbox"][name^="q${index}"]:checked`)).map(input => input.value);
+            if (JSON.stringify(selectedOptions.sort()) === JSON.stringify(q.answer.sort())) {
+                score += 1;
+                isCorrect = true;
+            }
+        } else if (q.type === 'fill_in_the_blank') {
+            const userAnswer = contentArea.querySelector(`#q${index}-input`).value.trim().toLowerCase();
+            if (userAnswer === q.answer.toLowerCase()) {
+                score += 1;
+                isCorrect = true;
+            }
+        } else if (q.type === 'drag_drop') {
+            // Partial scoring for drag-drop questions
+            const dropTargets = contentArea.querySelectorAll(`#drop-targets-container .drop-target`);
+            let correctMatches = 0;
+            dropTargets.forEach(target => {
+                const droppedItem = target.querySelector('.drag-item');
+                if (droppedItem) {
+                    const droppedId = droppedItem.id.replace('drag-', '');
+                    // Accept correct match for each pair
+                    if (q.answers[droppedId] && droppedId === target.id.replace('drop-', '')) {
+                        correctMatches++;
                     }
-                } else if (q.type === 'multi-select') {
-                    const selectedOptions = Array.from(contentArea.querySelectorAll(`input[type="checkbox"][name^="q${index}"]:checked`)).map(input => input.value);
-                    isCorrect = JSON.stringify(selectedOptions.sort()) === JSON.stringify(q.answer.sort());
-                } else if (q.type === 'fill_in_the_blank') {
-                    const userAnswer = contentArea.querySelector(`#q${index}-input`).value.trim().toLowerCase();
-                    if (userAnswer === q.answer.toLowerCase()) {
-                        isCorrect = true;
-                    }
-                } else if (q.type === 'drag_drop') {
-                    const dropTargets = contentArea.querySelectorAll(`#drop-targets-container .drop-target`);
-                    let correctMatches = 0;
-                    dropTargets.forEach(target => {
-                        const droppedItem = target.querySelector('.drag-item');
-                        if (droppedItem) {
-                            const droppedId = droppedItem.id.replace('drag-', '');
-                            const targetId = target.id.replace('drop-', '');
-                            if (droppedId === targetId) {
-                                correctMatches++;
-                            }
-                        }
-                    });
-                    isCorrect = correctMatches === q.items.length;
-                }
-
-                if (isCorrect) {
-                    score++;
-                    questionCard.classList.add('correct-answer');
-                } else {
-                    questionCard.classList.add('incorrect-answer');
                 }
             });
-
-            const resultsContainer = document.getElementById('quiz-results');
-            const scoreDisplay = document.getElementById('score-display');
-            scoreDisplay.textContent = `You scored ${score} out of ${quizQuestions.length}.`;
-            resultsContainer.classList.remove('hidden');
-
-            quizQuestions.forEach((q, index) => {
-                const questionCard = contentArea.querySelectorAll('.quiz-card')[index];
-                if (questionCard.classList.contains('incorrect-answer')) {
-                    const answerDisplay = document.createElement('p');
-                    answerDisplay.className = 'mt-2 text-sm text-red-800 font-medium';
-                    if (q.type === 'mcq') {
-                        answerDisplay.innerHTML = `Correct Answer: <strong>${q.answer}</strong>`;
-                    } else if (q.type === 'multi-select') {
-                        answerDisplay.innerHTML = `Correct Answers: <strong>${q.answer.join(', ')}</strong>`;
-                    } else if (q.type === 'fill_in_the_blank') {
-                        answerDisplay.innerHTML = `Correct Answer: <strong>${q.answer}</strong>`;
-                    } else if (q.type === 'drag_drop') {
-                        let correctPairs = Object.entries(q.answers).map(([key, value]) => `<strong>${key}</strong>: ${value}`);
-                        answerDisplay.innerHTML = `Correct Matches: ${correctPairs.join(' | ')}`;
-                    }
-                    questionCard.appendChild(answerDisplay);
-                }
-            });
+            // Award a point for each correct match
+            score += correctMatches;
+            // If all matches correct, mark card green; otherwise red
+            if (correctMatches === q.items.length) {
+                isCorrect = true;
+            }
         }
+
+        if (isCorrect) {
+            questionCard.classList.add('correct-answer');
+        } else {
+            questionCard.classList.add('incorrect-answer');
+        }
+    });
+
+    // Results
+    const resultsContainer = document.getElementById('quiz-results');
+    const scoreDisplay = document.getElementById('score-display');
+    // For drag-drop, total possible points increases by number of items in drag-drop questions
+    let totalPossible = 0;
+    quizQuestions.forEach(q => {
+        if (q.type === 'drag_drop') {
+            totalPossible += q.items.length;
+        } else {
+            totalPossible += 1;
+        }
+    });
+    scoreDisplay.textContent = `You scored ${score} out of ${totalPossible}.`;
+    resultsContainer.classList.remove('hidden');
+
+    quizQuestions.forEach((q, index) => {
+        const questionCard = contentArea.querySelectorAll('.quiz-card')[index];
+        if (questionCard.classList.contains('incorrect-answer')) {
+            const answerDisplay = document.createElement('p');
+            answerDisplay.className = 'mt-2 text-sm text-red-800 font-medium';
+            if (q.type === 'mcq') {
+                answerDisplay.innerHTML = `Correct Answer: <strong>${q.answer}</strong>`;
+            } else if (q.type === 'multi-select') {
+                answerDisplay.innerHTML = `Correct Answers: <strong>${q.answer.join(', ')}</strong>`;
+            } else if (q.type === 'fill_in_the_blank') {
+                answerDisplay.innerHTML = `Correct Answer: <strong>${q.answer}</strong>`;
+            } else if (q.type === 'drag_drop') {
+                let correctPairs = Object.entries(q.answers).map(([key, value]) => `<strong>${key}</strong>: ${value}`);
+                answerDisplay.innerHTML = `Correct Matches: ${correctPairs.join(' | ')}`;
+            }
+            questionCard.appendChild(answerDisplay);
+        }
+    });
+}
 
         function resetQuiz() {
             if (!currentQuizType) return;
